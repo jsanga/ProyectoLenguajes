@@ -13,8 +13,20 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    jugador.cpp \
+    MenuInicial.cpp \
+    tablero.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    jugador.h \
+    MenuInicial.h \
+    tablero.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    MenuInicial.ui \
+    tablero.ui
+
+OTHER_FILES +=
+
+RESOURCES += \
+    ImgPrincipal.qrc
