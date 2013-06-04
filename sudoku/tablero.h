@@ -15,6 +15,9 @@ public:
     explicit Tablero(QWidget *parent = 0);
     ~Tablero();
     
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Tablero *ui;
 };

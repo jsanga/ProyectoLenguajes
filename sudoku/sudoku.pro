@@ -15,18 +15,22 @@ TEMPLATE = app
 SOURCES += main.cpp\
     jugador.cpp \
     MenuInicial.cpp \
-    tablero.cpp
+    tablero.cpp \
+    elegirnum.cpp
 
 HEADERS  += \
     jugador.h \
     MenuInicial.h \
-    tablero.h
+    tablero.h \
+    elegirnum.h
 
 FORMS    += \
     MenuInicial.ui \
-    tablero.ui
+    tablero.ui \
+    elegirnum.ui
 
 OTHER_FILES +=
 
 RESOURCES += \
-    ImgPrincipal.qrc
+    ImgPrincipal.qrc \
+    Decision.qrc

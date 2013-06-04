@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new2/prefix2">
+        <file>Decision.png</file>
+    </qresource>
+</RCC>

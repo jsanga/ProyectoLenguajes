@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\jugador.o
+./release\MenuInicial.o
+./release\tablero.o
+./release\elegirnum.o
+./release\qrc_ImgPrincipal.o
+./release\qrc_Decision.o
+./release\moc_MenuInicial.o
+./release\moc_tablero.o
+./release\moc_elegirnum.o
+);
