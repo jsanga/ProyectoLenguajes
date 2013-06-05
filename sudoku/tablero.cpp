@@ -1,5 +1,52 @@
 #include "tablero.h"
 #include "ui_tablero.h"
+#include <QApplication>
+#include "elegirnum.h"
+#include "time.h"
+#include "string.h"
+#include "stdlib.h"
+
+Tablero::Tablero(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::Tablero)
+{
+    ui->setupUi(this);
+    initGui();
+}
+
+Tablero::~Tablero()
+{
+    delete ui;
+    for(int i=0;i<9;i++){
+        delete numberTextEdit[i];
+    }
+}
+
+void Tablero::initGui(){
+
+    for(int i=0;i<9;i++){
+        numberTextEdit[i]=new QTextEdit("");
+        ui->gridLayout->addWidget(numberTextEdit[i]);
+        }
+
+}
+
+
+
+
+void Tablero::on_pushButton_clicked()
+{
+    ElegirNum *w;
+    w = new ElegirNum();
+    w->show();
+    w->activateWindow();
+}
+
+
+
+
+/*#include "tablero.h"
+#include "ui_tablero.h"
 #include "elegirnum.h"
 #include "time.h"
 #include "string.h"
@@ -129,3 +176,4 @@ void Tablero::on_pushButton_clicked()
 }
 
 
+*/

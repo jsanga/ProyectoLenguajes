@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\jugador.o
+./debug\MenuInicial.o
+./debug\tablero.o
+./debug\elegirnum.o
+./debug\qrc_ImgPrincipal.o
+./debug\qrc_Decision.o
+./debug\moc_MenuInicial.o
+./debug\moc_tablero.o
+./debug\moc_elegirnum.o
+);
