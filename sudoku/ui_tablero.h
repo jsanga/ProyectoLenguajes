@@ -365,7 +365,7 @@ public:
         pushButton_81->setGeometry(QRect(420, 420, 51, 51));
         gridLayoutWidget = new QWidget(centralwidget);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(160, 70, 261, 361));
+        gridLayoutWidget->setGeometry(QRect(20, 20, 451, 451));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);

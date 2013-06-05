@@ -24,7 +24,7 @@ private slots:
 private:
     void initGui();
     Ui::Tablero *ui;
-    QTextEdit *numberTextEdit[9];
+    QTextEdit *numberTextEdit[20];
 };
 
 #endif // TABLERO_H

@@ -17,18 +17,24 @@ Tablero::Tablero(QWidget *parent) :
 Tablero::~Tablero()
 {
     delete ui;
-    for(int i=0;i<9;i++){
-        delete numberTextEdit[i];
+    for(int k=0;k<20;k++){
+        delete numberTextEdit[k];
     }
 }
 
 void Tablero::initGui(){
 
-    for(int i=0;i<9;i++){
-        numberTextEdit[i]=new QTextEdit("");
-        ui->gridLayout->addWidget(numberTextEdit[i]);
-        }
+    for(int k=0;k<20;k++){
+        for(int i=0;i<9;i++){
+       for(int j=0;j<9;j++) {
+           numberTextEdit[k]=new QTextEdit("");
+           ui->gridLayout->addWidget(numberTextEdit[k],i,j);
+       }
 
+    }
+
+
+    }
 }
 
 
